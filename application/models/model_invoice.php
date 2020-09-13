@@ -45,7 +45,7 @@ class Model_invoice extends CI_Model{
         $result = $this->db->where('id', $id_invoice)->limit(1)->get('tb_invoice');
         if($result->num_rows() > 0){
             return $result->row();
-        }else{
+        } else {
             return false;
         }
     }
@@ -55,7 +55,7 @@ class Model_invoice extends CI_Model{
         $result = $this->db->where('id_invoice', $id_invoice)->get('tb_pesanan');
         if($result->num_rows() > 0){
             return $result->result();
-        }else{
+        } else {
             return false;
         }
     }
