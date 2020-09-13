@@ -12,6 +12,7 @@
 
         <?php foreach ($invoice as $inv): ?>
         <tr>
+            <?php print_r($invoice); ?>
             <td><?php echo $inv->id ?></td>
             <td><?php echo $inv->nama ?></td>
             <td><?php echo $inv->alamat ?></td>
