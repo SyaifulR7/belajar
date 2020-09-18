@@ -7,17 +7,7 @@
 			<th>JUMLAH PESANAN</th>
 			<th>HARGA SATUAN</th>
 			<th>SUB TOTAL</th>
-		</tr>
-	
-		<?php print_r($pesanan); ?>
-		<?php
-		foreach ($pesanan as $psn) : ?>
-		<tr>
-			<td><?php echo $psn->id_brg ?></td>
-		</tr>
-		<?php endforeach; ?>
-		
-		<!-- 
+		</tr>		
 		<?php 
 		$total = 0;
 		/*print_r($pesanan);
@@ -34,7 +24,5 @@
 		 	<td><?php echo number_format($subtotal,0,',','.') ?></td>
 		</tr>
 		<?php endforeach; ?>
-		-->
-		
 	</table>
 </div>
