@@ -24,5 +24,13 @@
 		 	<td><?php echo number_format($subtotal,0,',','.') ?></td>
 		</tr>
 		<?php endforeach; ?>
+
+		<tr>
+			<td colspan="4" align="right">Grand Total</td>
+			<td align="right">Rp. <?php echo number_format($total,0,',','.') ?></td>
+		</tr>
 	</table>
+
+	<a href="<?php echo base_url('admin/invoice/index') ?>"><div class="btn btn-sm btn-primary">Kembali</div></a>
+
 </div>
